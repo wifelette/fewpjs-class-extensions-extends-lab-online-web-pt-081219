@@ -1,74 +1,71 @@
-let circle;
-let triangle;
-let square;
+// let circle;
+// let triangle;
+// let square;
 
+// describe( "Polygon", () => {
+//   beforeEach( () => {
+//     polygon = new Polygon( [ 5, 5, 5 ] )
+//   } )
 
+//   it( "has a Polygon class", () => {
+//     expect( Polygon ).to.exist
+//   } )
 
-describe( "Polygon", () => {
-  beforeEach( () => {
-    polygon = new Polygon( [ 5, 5, 5 ] )
-  } )
+//   it( "Polygon has a countSides getter method that returns the number of sides of the polygon", () => {
+//     expect( polygon.countSides ).to.eq( 3 )
+//   } )
 
-  it( "has a Polygon class", () => {
-    expect( Polygon ).to.exist
-  } )
+//   it( "Polygon has a perimeter getter that calculates perimeter", () => {
+//     expect( polygon.perimeter ).to.eq( 15 )
+//   } )
+// } )
 
-  it( "Polygon has a countSides getter method that returns the number of sides of the polygon", () => {
-    expect( polygon.countSides ).to.eq( 3 )
-  } )
+// describe( "Triangle", () => {
+//   let triangle
+//   let triangle2
+//   it( "has a Triangle class", () => {
+//     expect( Triangle ).to.exist
+//   } )
 
-  it( "Polygon has a perimeter getter that calculates perimeter", () => {
-    expect( polygon.perimeter ).to.eq( 15 )
-  } )
-} )
+//   it( "checks for valid triangle", () => {
+//     triangle = new Triangle( [ 5, 5, 5 ] )
+//     triangle2 = new Triangle( [ 15, 10, 1 ] )
 
-describe( "Triangle", () => {
-  let triangle
-  let triangle2
-  it( "has a Triangle class", () => {
-    expect( Triangle ).to.exist
-  } )
+//     expect( triangle.countSides ).to.eq( 3 )
 
-  it( "checks for valid triangle", () => {
-    triangle = new Triangle( [ 5, 5, 5 ] )
-    triangle2 = new Triangle( [ 15, 10, 1 ] )
+//     expect( triangle.isValid ).to.be.true
+//     expect( triangle2.isValid ).to.be.false
+//   } )
 
-    expect( triangle.countSides ).to.eq( 3 )
+//   it( "has a perimeter getter inherited from Polygon", () => {
+//     expect( triangle.perimeter ).to.eq( 15 )
+//     expect( triangle2.perimeter ).to.eq( 26 )
+//   } )
+// } )
 
-    expect( triangle.isValid ).to.be.true
-    expect( triangle2.isValid ).to.be.false
-  } )
+// describe( "Square", () => {
+//   it( "has a Square class", () => {
+//     expect( Square ).to.exist
+//   } )
 
-  it( "has a perimeter getter inherited from Polygon", () => {
-    expect( triangle.perimeter ).to.eq( 15 )
-    expect( triangle2.perimeter ).to.eq( 26 )
-  } )
-} )
+//   it( "has a perimeter getter inherited from Polygon", () => {
+//     let square = new Square( [ 5, 5, 5, 5 ] )
 
+//     expect( square.perimeter ).to.eq( 20 )
+//   } )
 
-describe( "Square", () => {
-  it( "has a Square class", () => {
-    expect( Square ).to.exist
-  } )
+//   it( "calculates the area", () => {
+//     let square = new Square( [ 5, 5, 5, 5 ] )
 
-  it( "has a perimeter getter inherited from Polygon", () => {
-    let square = new Square( [ 5, 5, 5, 5 ] )
+//     expect( square.area ).to.eq( 25 )
+//   } )
 
-    expect( square.perimeter ).to.eq( 20 )
-  } )
+//   it( "checks for valid square", () => {
+//     let square = new Square( [ 5, 5, 5, 5 ] )
+//     let square2 = new Square( [ 5, 4, 3, 2 ] )
 
-  it( "calculates the area", () => {
-    let square = new Square( [ 5, 5, 5, 5 ] )
-
-    expect( square.area ).to.eq( 25 )
-  } )
-
-  it( "checks for valid square", () => {
-    let square = new Square( [ 5, 5, 5, 5 ] )
-    let square2 = new Square( [ 5, 4, 3, 2 ] )
-
-    expect( square.countSides ).to.eq( 4 )
-    expect( square.isValid ).to.be.true
-    expect( square2.isValid ).to.be.false
-  } )
-} )
+//     expect( square.countSides ).to.eq( 4 )
+//     expect( square.isValid ).to.be.true
+//     expect( square2.isValid ).to.be.false
+//   } )
+// } )
